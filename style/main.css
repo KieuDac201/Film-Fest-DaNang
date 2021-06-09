@@ -14,6 +14,7 @@
     margin: 0;
     box-sizing: border-box;
     font-weight: 400;
+    
 }
 
 html{
@@ -22,6 +23,9 @@ html{
     color: var(--white-color);
     overflow-x: hidden;
     
+}
+body{
+    overflow-x: hidden;
 }
 
 a{
@@ -389,7 +393,7 @@ header{
     width: 100%;
     overflow-x:scroll ;
     padding: 64px 0;
-    
+    scroll-snap-type: x mandatory;
 }
 
 .test-stage .list::-webkit-scrollbar-track
@@ -412,6 +416,7 @@ header{
 .test-stage .item{
     min-width: 450px;
     padding-right: 32px;
+    scroll-snap-align: start;
     
 }
 .test-stage .item h4{
