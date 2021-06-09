@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -32,8 +39,9 @@
             </li>
             <li class="menu-item">
               <a href="#" class="menu-link"
-                >Tin tức <img src="./assets/images/arrow-down.png" alt=""
-              /></a>
+                >Tin tức 
+                <!-- <img src="./assets/images/arrow-down.png" alt=""/> -->
+              </a>
             </li>
             <li class="menu-item">
               <a href="#" class="menu-link">Liên hệ</a>
@@ -43,6 +51,9 @@
             <img src="./assets/images/user-icon.png" alt="" />
             <span>Đăng ký</span>
           </a>
+          <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </nav>
       <div class="banner">
@@ -209,7 +220,7 @@
     <section id="test-stage">
       <div class="test-stage container">
         <h3>Giai đoạn cuộc thi</h3>
-        <ul class="list">
+        <ul class="list swiper-wrapper">
           <li class="item">
             <h3>01</h3>
             <h4>Công bố cuộc thi</h4>
@@ -431,19 +442,5 @@
       </div>
     </footer>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type='text/javascript' src='./js/jquery.mousewheel.min.js'></script>
-<script>
-  $(function() {
-
-      $(".list").mousewheel(function(event, delta) {
-
-        this.scrollLeft -= (delta * 30);
-      
-        event.preventDefault();
-
-      });
-
-});
-</script>
+  <script src="./js/main.js"></script>
 </html>

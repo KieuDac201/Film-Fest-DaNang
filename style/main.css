@@ -81,8 +81,11 @@ img{
     bottom: -0;
     transition: 0.2s;
 }
+.menu-icon{
+    display: none;
+}
 .btn{
-    width: 122px;
+    min-width: 122px;
     height: 48px;
     display: flex;
     align-items: center;
@@ -91,6 +94,8 @@ img{
     border-radius: 4px;
     color: var(--yellow-color);
     cursor: pointer;
+    padding: 0 10px;
+    white-space: nowrap;
 }
 .btn.btn-fill{
     background-color: var(--yellow-color);
@@ -384,11 +389,9 @@ header{
     width: 100%;
     overflow-x:scroll ;
     padding: 64px 0;
-    scroll-snap-type: y mandatory;
+    
 }
-.test-stage .list:active{
-    cursor: grab;
-}
+
 .test-stage .list::-webkit-scrollbar-track
 {
 	background-color:#251b34;
@@ -397,19 +400,19 @@ header{
 
 .test-stage .list::-webkit-scrollbar
 {
-    height: 5px;
+    height: 10px;
 	background-color: var(--white-color);
     opacity: 0.1;
 }
 
 .test-stage .list::-webkit-scrollbar-thumb
 {
-	background-color: var(--white-color);
+	background-color: var(--light-grey);
 }
 .test-stage .item{
     min-width: 450px;
     padding-right: 32px;
-    scroll-snap-align: start;
+    
 }
 .test-stage .item h4{
     font-weight: 600;
@@ -533,4 +536,238 @@ footer{
     border-top: 1px solid rgba(255,255,255,0.1);
     text-align: center;
     color: var(--light-grey);
+}
+@media (max-width: 1140px){
+    .jury .list-top li div {
+        height: auto;
+    }
+    .jury .list-bottom li div {
+        height: auto;
+    }
+}
+@media (max-width: 992px){
+    .menu{
+        display: none;
+    }
+    .menu.active{
+        display: flex;
+        position: fixed;
+        inset: 0;
+        background: var(--bg-color);
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu.active .menu-item{
+        margin: 15px 0;
+        font-size: 20px;
+    }
+    .menu.active .menu-link{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .menu.active ~ .menu-icon{
+        position: fixed;
+        top: 24px;
+        right: 20px;
+    }
+    .menu.active .menu-link::before{
+        display: none;
+    }
+    .btn{
+        width: 110px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--yellow-color);
+        border-radius: 4px;
+        color: var(--yellow-color);
+        cursor: pointer;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 25px;
+        color: var(--yellow-color);
+        z-index: 11;
+    }
+    .nav .btn{
+        display: none;
+    }
+    /*=====BANNER =======*/
+    .banner-image {
+        max-width: 800px;
+        margin-top: 30px;
+    }
+    .banner-text {
+        max-width: 300px;
+    }
+    .logo-sub {
+        max-width: 260px;
+    }
+    /*=====TEST INFO =======*/
+    .test-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .test-info .img {
+        justify-content: center;
+        margin-top: 55px;
+        padding-right: 0;
+    }
+    .committee .list {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .award {
+        grid-template-columns: repeat(5,1fr );
+    }
+    .award .content {
+        grid-column: 3/ 6;
+        padding-left: 30px;
+    }
+    .award .img {
+        grid-column: 1 / 3;
+    }
+
+    .jury .list-bottom {
+        grid-template-columns: repeat(3,1fr );
+    }
+    .jury .list-bottom li:last-child{
+        grid-column: 2 / 3;
+    }
+    .jury ul div img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .footer-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .jury ul div::before {
+        position: absolute;
+        content: '';
+        top: -15px;
+        right: -15px;
+        bottom: -15px;
+        left: 15px;
+        border: 1px solid var(--yellow-color);
+    }
+}
+
+@media (max-width: 768px){
+    .banner-image {
+        width: 580px;
+    }
+    .banner-text {
+        max-width: 280px;
+    }
+
+    .committee {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .committee h4 {
+        font-size: 16px;
+    }
+    .committee h3 {
+        font-size: 26px;
+    }
+    .committee .list {
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .award {
+        grid-template-columns: repeat(1,1fr );
+        grid-gap: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .award .content {
+        grid-column:auto;
+        grid-row: 1 / 2;
+    }
+    .award .img {
+        grid-column: auto;
+        grid-row: 2 / 3;
+    }
+    .jury .list-top {
+        grid-template-columns: repeat(4,1fr );
+    }
+    .jury .list-top li{
+        grid-column: span 2;
+    }
+    .jury .list-top li:last-child{
+        grid-column: 2 / 4;
+    }
+    .jury .list-bottom {
+        grid-template-columns: repeat(2,1fr );
+    }
+    .submit-test .time .circle {
+        margin: 0 20px;
+    }
+    .submit-test h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .footer-right {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+@media (max-width: 687px){
+    .committee h3 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 500px){
+    .committee h3 {
+        font-size: 22px;
+    }
+    .committee h4 {
+        font-size: 15px;
+    }
+    .committee .list {
+        grid-gap: 35px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .committee .list-item img {
+        margin-bottom: 10px;
+    }
+    .jury .list-top li div{
+        overflow: hidden;
+        width: 60%;
+    }
+    .jury .list-top {
+        grid-template-columns: repeat(1,1fr );
+    }
+    .jury .list-top li, .jury .list-top li:last-child{
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jury .list-bottom {
+        grid-template-columns: repeat(1,1fr );
+    }
+    .jury .list-bottom li, .jury .list-bottom li:last-child{
+        grid-column:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jury .list-bottom li div{
+        overflow: hidden;
+        width: 60%;
+    }
+    .test-stage .item {
+        min-width: 400px;
+        padding-right: 32px;
+    }
 }
