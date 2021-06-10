@@ -1,116 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-:root{
-    --bg-color: #021533;
-    --bg-color-light: #001f49;
-    --white-color: #ffffff;
-    --light-grey: #D1CED4;
-    --yellow-color: #F9D201;
-    --dark-color: #170C27;
-}
-@import './homepage.css';
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    
-}
 
-html{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: var(--white-color);
-    overflow-x: hidden;
-    
-}
-body{
-    overflow-x: hidden;
-}
-
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none;
-}
-h3{
-    font-size: 36px;
-    font-weight: 600;
-}
-img{
-    max-width: 100%;
-}
-.container{
-    max-width: 1160px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.logo{
-    height: 48px;
-}
-.menu{
-    display: flex;
-    align-items: center;
-}
-.menu-item:not(:last-child){
-    margin-right: 32px;
-}
-.menu-link{
-    color: var(--light-grey);
-    position: relative;
-    transition: 0.2s;
-    padding: 10px 0;
-}
-.menu-link.active,
-.menu-link:hover{
-    color: var(--yellow-color);
-}
-.menu-link.active::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: var(--yellow-color);
-    left: 0;
-    bottom: -0;
-    transition: 0.2s;
-}
-.menu-icon{
-    display: none;
-}
-.btn{
-    min-width: 122px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--yellow-color);
-    border-radius: 4px;
-    color: var(--yellow-color);
-    cursor: pointer;
-    padding: 0 10px;
-    white-space: nowrap;
-}
-.btn.btn-fill{
-    background-color: var(--yellow-color);
-    color: var(--dark-color);
-}
-.btn img{
-    margin-right: 8px;
-}
-.btn span{
-    font-weight: 600;
-}
 
 /*=================== HEADER =======================*/
 header{
@@ -551,54 +440,7 @@ footer{
     }
 }
 @media (max-width: 992px){
-    .menu{
-        display: none;
-    }
-    .menu.active{
-        display: flex;
-        position: fixed;
-        inset: 0;
-        background: var(--bg-color);
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .menu.active .menu-item{
-        margin: 15px 0;
-        font-size: 20px;
-    }
-    .menu.active .menu-link{
-        margin: 20px 0;
-        font-size: 20px;
-    }
-    .menu.active ~ .menu-icon{
-        position: fixed;
-        top: 24px;
-        right: 20px;
-    }
-    .menu.active .menu-link::before{
-        display: none;
-    }
-    .btn{
-        width: 110px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--yellow-color);
-        border-radius: 4px;
-        color: var(--yellow-color);
-        cursor: pointer;
-    }
-    .menu-icon{
-        display: block;
-        font-size: 25px;
-        color: var(--yellow-color);
-        z-index: 11;
-    }
-    .nav .btn{
-        display: none;
-    }
+    
     /*=====BANNER =======*/
     .banner-image {
         max-width: 800px;
@@ -719,11 +561,6 @@ footer{
     .submit-test h3 {
         font-size: 30px;
         font-weight: 600;
-    }
-    .footer-right {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
     }
 }
 @media (max-width: 687px){
