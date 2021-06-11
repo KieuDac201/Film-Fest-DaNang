@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/logo.png" />
+    <title>Bài dự thi</title>
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/baiduthi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav container">
+          <a class="logo">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="./thele.html" class="menu-link">Thể lệ cuộc thi</a>
+            </li>
+            <li class="menu-item">
+              <a href="giaithuong.html" class="menu-link">Giải thưởng</a>
+            </li>
+            <li class="menu-item">
+              <a href="baiduthi.html" class="menu-link active">Bài dự thi</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Uư đãi</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link"
+                >Tin tức
+                <!-- <img src="./assets/images/arrow-down.png" alt=""/> -->
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Liên hệ</a>
+            </li>
+          </ul>
+          <a class="btn">
+            <img src="./assets/images/user-icon.png" alt="" />
+            <span>Đăng ký</span>
+          </a>
+          <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner container">
+        <img src="./assets/images/logo2.png" alt="" class="big-logo" />
+        <img src="./assets/images/logo-sub.png" alt="" class="sub-logo" />
+        <img src="./assets/images/main-visual.png" alt="" class="main-visual" />
+        <h3>ĐĂNG KÝ DỰ THI CUỘC THI PHIM NGẮN ĐÀ NẴNG LẦN THỨ I - 2021</h3>
+        <img src="./assets/images/star.png" alt="" class="star star-left" />
+        <img src="./assets/images/star.png" alt="" class="star star-right" />
+      </div>
+    </header>
+
+    <section id="register-form">
+      <div class="register-form">
+        <p class="desc">
+          Cuộc thi Phim ngắn Đà Nẵng Lần thứ I – 2021“KHÁM PHÁ ĐÀ NẴNG TUYỆT VỜI
+          - WOW DA NANG” là hình thức cuộc thi sáng tác phim ngắn kết nối đa
+          phương tiện trên nền tảng số đặc sắc, lần đầu tiên có tại Việt Nam.
+          Chưa kể, tham gia cuộc thi bạn sẽ có cơ hội khám phá nhiều điều thú vị
+          của "thành phố đáng sống nhất Việt Nam" và nhận về nhiều giải thưởng
+          hấp dẫn. Chần chờ gì nữa, đăng kí ngay, chờ chi! Tên và ảnh liên kết
+          với Tài khoản Google của bạn sẽ được ghi lại khi bạn tải tệp lên và
+          gửi biểu mẫu này Mọi tệp đã tải lên sẽ được chia sẻ bên ngoài tổ chức
+          sở hữu các tệp đó.
+        </p>
+        <div class="btn-group">
+          <h5 class="new-register active">Đăng kí mới</h5>
+          <h5 class="registered">Bạn đã đăng kí</h5>
+        </div>
+        
+        <form id="form">
+            <!-- <div class="form-group">
+                <div class="form-input text">
+                  <label for="">
+                    <h5>
+                        Tên đơn vị / cá nhân dự thi 
+                        <span>*</span>
+                    </h5>
+                    <input type="text" placeholder="Câu trả lời của bạn" />
+                </label>
+                </div>
+              </div>
+              <div class="btn-group">
+                <div class="btn btn-fill">Tiếp tục</div>
+            </div> -->
+            <h4>Thông tin tác phẩm dự thi</h4>
+          <div class="form-group">
+            <div class="form-input">
+              <h5>
+                Tác phẩm của bạn được thực hiện bởi một nhóm hay một cá nhân?
+                <span>*</span>
+              </h5>
+              <label for="" class="radio">
+                <input type="radio" name="teamOrPersonal" id="team" />
+                <p>Nhóm</p>
+              </label>
+              <label for="" class="radio">
+                <input type="radio" name="teamOrPersonal" id="personal" />
+                <p>Cá nhân</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input text">
+              <label for="">
+                <h5>
+                    Tên đơn vị/cá nhân dự thi 
+                    <span>*</span>
+                </h5>
+                <input type="text" placeholder="Câu trả lời của bạn" />
+              </label>
+              <label for="">
+                <h5>
+                    Số lượng thành viên
+                    <span>*</span>
+                </h5>
+                <input type="text" placeholder="Câu trả lời của bạn" />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input text">
+              <label for="" >
+                <h5>
+                    Tên tác phẩm
+                    <span>*</span>
+                </h5>
+                <input type="text" placeholder="Câu trả lời của bạn" />
+              </label>
+              <label for="">
+                <h5>
+                    Thời lượng tác phẩm (vui lòng chuyền về đơn vị giây)
+                    <span>*</span>
+                </h5>
+                <input type="text" placeholder="Câu trả lời của bạn" />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input">
+              <h5>Thể loại <span>*</span></h5>
+              <label for="" class="radio">
+                <input type="radio" name="type"  />
+                <p>MV ca nhạc</p>
+              </label>
+              <label for="" class="radio">
+                <input type="radio" name="type"  />
+                <p>Phim ngắn</p>
+              </label>
+              <label for="" class="radio">
+                <input type="radio" name="type"  />
+                <p>Phóng sự</p>
+              </label>
+              <label for="" class="radio">
+                <input type="radio" name="type"  />
+                <p>Viral clip</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input">
+              <label for="">
+                <h5>
+                    Tóm tắt nội dung 
+                    <span>*</span>
+                </h5>
+                <textarea placeholder="Câu trả lời của bạn"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input">
+                
+              <label for="">
+                <h5>
+                    Upload bài dự thi
+                    <span>*</span>
+                </h5>
+                
+                <input type="file" id="baithi"/>
+              </label>
+              <label for="baithi" class="btn">Thêm tệp</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input">
+              <label for="">
+                <h5>
+                    Thumbnail bài dự thi
+                    <span>*</span>
+                </h5>
+                <input type="file" id="thumbnail"/>
+              </label>
+              <label for="thumbnail" class="btn">Thêm tệp</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-input text">
+              <label for="">
+                <h5>
+                    Link hình ảnh/video hậu trường sản xuất (nếu có)
+                    <span>*</span>
+                </h5>
+                
+                <input type="text" placeholder="Câu trả lời của bạn"/>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-input">
+              <label for="" class="radio">
+                <input type="checkbox" />
+                <p>
+                  Đơn vị/cá nhân xác nhận tham gia Cuộc thi đồng nghĩa với việc
+                  đồng ý với các Điều lệ và Quyết định cuối cùng của Ban tổ chức
+                  trong mọi vấn đề phát sinh trong quá trình diễn ra và sau khi
+                  kết thúc cuộ thi. *
+                </p>
+              </label>
+            </div>
+          </div>
+
+          <div class="btn-group">
+              <div class="btn btn-disable">Quay lại</div>
+              <div class="btn btn-fill">Gửi</div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer container">
+        <div class="footer-main">
+          <div class="footer-left">
+            <img src="./assets/images/logo.png" alt="" />
+            <p>
+              Trung tâm Hành chính Đà Nẵng
+              <br />
+              24 Đường Trần Phú, Thạch Thang, Hải Châu, TP. Đà Nẵng
+            </p>
+            <p>
+              Công ty CP Truyền thông đa phương tiện Đời Sống Trẻ
+              <br />
+              57 Cao Thắng, Phường 3, Quận 3, TP. Hồ Chí Minh
+            </p>
+            <p>Email: info@danang@filmfest.vn</p>
+            <p>Hotline: 090 666 43 59</p>
+          </div>
+          <div class="footer-right">
+            <ul>
+              <li>
+                <a>Câu hỏi thường gặp</a>
+              </li>
+              <li>
+                <a>Tin tức</a>
+              </li>
+              <li>
+                <a>Chính sách & bảo mật</a>
+              </li>
+            </ul>
+            <div class="social">
+              <p>Liên hệ với chúng tôi</p>
+              <div>
+                <a href=""><img src="./assets/images/facebook.png" alt="" /></a>
+                <a href=""
+                  ><img src="./assets/images/instagram.png" alt=""
+                /></a>
+                <a href=""><img src="./assets/images/youtube.png" alt="" /></a>
+                <a href=""><img src="./assets/images/tiktok.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright © 2020 Filmfest Da Nang</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/baiduthi.js"></script>
+  </body>
+</html>

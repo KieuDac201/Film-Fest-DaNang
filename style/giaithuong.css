@@ -13,6 +13,20 @@ header{
     padding-bottom: 100px;
     text-align: center;
 }
+.banner h3{
+    position: relative;
+    display: inline-block;
+}
+.banner h3 img{
+    position: absolute;
+}
+.banner h3 img:first-child{
+    left: -90px;
+}
+.banner h3 img:last-child{
+    right: -90px;
+    transform: rotate(180deg);
+}
 .banner h4{
     font-size: 24px;
     padding-top: 20px;
